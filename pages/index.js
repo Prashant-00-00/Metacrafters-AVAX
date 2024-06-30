@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Web3 from 'web3';
 
-// ABI (Application Binary Interface) of the MathOperations contract
 const mathOperationsABI = [
   {
     "constant": true,

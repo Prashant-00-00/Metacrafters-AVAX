@@ -1,12 +1,25 @@
-# Starter Next/Hardhat Project
+# Math Operations DApp
 
-After cloning the github, you will want to do the following to get the code running on your computer.
+This project is a decentralized application (DApp) that demonstrates simple math operations (addition and subtraction) using Ethereum smart contracts and a React frontend.
 
-1. Inside the project directory, in the terminal type: npm i
-2. Open two additional terminals in your VS code
-3. In the second terminal type: npx hardhat node
-4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-5. Back in the first terminal, type npm run dev to launch the front-end.
+## Project Structure
 
-After this, the project will be running on your localhost. 
-Typically at http://localhost:3000/
+- **index.js**: The main React component that interacts with the deployed smart contract to perform math operations.
+- **MathOperation.sol**: The Solidity smart contract that provides functions for addition and subtraction.
+- **deploy.js**: The script used to deploy the smart contract to the Ethereum blockchain.
+
+## Prerequisites
+
+- Node.js and npm installed
+- Hardhat installed globally (`npm install -g hardhat`)
+- Metamask or another Web3 provider installed in your browser
+
+## Compile and Deploy the Smart Contract
+
+Start a local Ethereum node (if not already running):
+##
+    npx hardhat node'
+
+In a new terminal window, deploy the smart contract:
+##
+    npx hardhat run scripts/deploy.js --network localhost
